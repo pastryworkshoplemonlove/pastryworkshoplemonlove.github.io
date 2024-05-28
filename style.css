@@ -1,0 +1,67 @@
+/* Add custom styles here */
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.hero {
+  background-image: url('hero-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.about img,
+.products img,
+.contact img {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Add custom styles here */
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/* Добавете стилове за мобилен изглед тук */
+
+@media screen and (max-width: 768px) {
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    opacity: 1; /* Променете прозрачността */
+  }
+}
+
+  .hero {
+    background-size: contain; /* Променете размера на фоновото изображение */
+  }
+
+  .about img,
+  .products img,
+  .contact img {
+    animation: none; /* Премахнете анимацията за мобилния изглед */
+    opacity: 1; /* Задайте пълна прозрачност */
+    transform: none; /* Нулирайте трансформацията */
+  }
